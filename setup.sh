@@ -54,7 +54,7 @@ ln -sb dotfiles/.vimrc .
 # Moving vim color schemes into the appropriate color folder
 cd .vim
 mkdir color
-ln -sf ~/dotfiles/.vim/color color
+ln -sf ~/dotfiles/.vim/color .
 cd $HOME
 
 
