@@ -31,10 +31,9 @@ sudo apt-get install -y emacs24-nox emacs24-el emacs24-common-non-dfsg
 # https://toolbelt.heroku.com/debian
 wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
 
-# Install pathogen in order to install plugins into appropriate directories
-# http://www.vim.org/scripts/script.php?script_id=2332
-mkdir -p ~/.vim/autoload ~/.vim/bundle 
-curl -Sso ~/.vim/autoload/pathogen.vim https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim
+# Install vundle to handle vim plugins
+# https://github.com/gmarik/vundle
+git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 
 # git pull and install dotfiles as well
 cd $HOME
