@@ -34,7 +34,7 @@ wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
 # Install pathogen in order to install plugins into appropriate directories
 # http://www.vim.org/scripts/script.php?script_id=2332
 mkdir -p ~/.vim/autoload ~/.vim/bundle 
-curl 'www.vim.org/scripts/download_script.php?src_id=19375'
+curl -Sso ~/.vim/autoload/pathogen.vim https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim
 
 # git pull and install dotfiles as well
 cd $HOME
