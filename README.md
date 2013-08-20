@@ -15,6 +15,15 @@ See also http://github.com/startup-class/dotfiles and
 [Startup Engineering Video Lectures 4a/4b](https://class.coursera.org/startup-001/lecture/index)
 for more details.
 
+Updated By Paul Deng
+====================
+Added extra configuration for personal usage and setup on EC2 instance. 
+
+- Vim Plugins
+- More Bash Plugins
+
+Source: http://swaroopch.com/2010/12/06/bash-vim-setup/
+
 
 
 
