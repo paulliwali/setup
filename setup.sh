@@ -52,6 +52,11 @@ ln -sf dotfiles/.emacs.d .
 ln -sb dotfiles/.vimrc .
 
 # Moving vim color schemes into the appropriate folders
-ln -sf dotfiles/.vim/colors/ .
+cd $HOME
+cd .vim
+if [ -d ./.vim/colors/ ]; then
+    mv .vim/colors .vim/colors.old
+fi
+ln -sf dotfiles/.vim/colors .
 
 
