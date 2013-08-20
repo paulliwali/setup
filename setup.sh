@@ -51,4 +51,7 @@ ln -sb dotfiles/.bashrc_custom .
 ln -sf dotfiles/.emacs.d .
 ln -sb dotfiles/.vimrc .
 
+# Moving vim color schemes into the appropriate folders
+ln -sf dotfiles/.vim/colors/ .
+
 
