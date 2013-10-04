@@ -24,7 +24,12 @@ Added extra configuration for personal usage and setup on EC2 instance.
 
 Source: http://swaroopch.com/2010/12/06/bash-vim-setup/
 
+##MacOS
 
+Install [Homebrew](http://brew.sh/) to install missing packages on OSX
+```
+ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
+```
 
 
 
