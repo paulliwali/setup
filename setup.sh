@@ -44,12 +44,12 @@ if [ -d .emacs.d/ ]; then
     mv .emacs.d .emacs.d~
 fi
 git clone https://github.com/paulliwali/dotfiles.git
-ln -sb dotfiles/.screenrc .
-ln -sb dotfiles/.bash_profile .
-ln -sb dotfiles/.bashrc .
-ln -sb dotfiles/.bashrc_custom .
+ln -sf dotfiles/.screenrc .
+ln -sf dotfiles/.bash_profile .
+ln -sf dotfiles/.bashrc .
+ln -sf dotfiles/.bashrc_custom .
 ln -sf dotfiles/.emacs.d .
-ln -sb dotfiles/.vimrc .
+ln -sf dotfiles/.vimrc .
 
 # Moving vim color schemes into the appropriate color folder
 cd .vim
