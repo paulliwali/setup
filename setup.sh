@@ -2,6 +2,8 @@
 # Simple setup.sh for configuring Ubuntu 12.04 LTS EC2 instance
 # for headless setup. 
 
+#Personal Package Archive (PPA) for Ubuntu Precise
+sudo apt-get install software-properties-common python-software-properties
 # Install nvm: node-version manager
 # https://github.com/creationix/nvm
 sudo apt-get install -y git
