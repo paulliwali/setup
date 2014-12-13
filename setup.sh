@@ -8,11 +8,13 @@ sudo apt-get install software-properties-common python-software-properties
 # Install vim
 sudo apt-get install vim
 
+# Install nodejs: javascript backend platform
 # Install nvm: node-version manager
 # https://github.com/creationix/nvm
 sudo apt-get install -y git
 sudo apt-get install -y curl
-curl https://raw.github.com/creationix/nvm/master/install.sh | sh
+curl -sL https://deb.nodesource.com/setup | sudo bash -
+sudo apt-get install -y nodejs
 
 # Load nvm and install latest production node
 source $HOME/.nvm/nvm.sh
