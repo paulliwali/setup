@@ -16,24 +16,9 @@ sudo apt-get install -y curl
 curl -sL https://deb.nodesource.com/setup | sudo bash -
 sudo apt-get install -y nodejs
 
-# Load nvm and install latest production node
-source $HOME/.nvm/nvm.sh
-nvm install v0.10.12
-nvm use v0.10.12
-
-# Install jshint to allow checking of JS code within emacs
-# http://jshint.com/
-npm install -g jshint
-
 # Install rlwrap to provide libreadline features with node
 # See: http://nodejs.org/api/repl.html#repl_repl
 sudo apt-get install -y rlwrap
-
-# Install emacs24
-# https://launchpad.net/~cassou/+archive/emacs
-sudo add-apt-repository -y ppa:cassou/emacs
-sudo apt-get -qq update
-sudo apt-get install -y emacs24-nox emacs24-el emacs24-common-non-dfsg
 
 # Install Heroku toolbelt
 # https://toolbelt.heroku.com/debian
@@ -46,17 +31,13 @@ git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 # git pull and install dotfiles as well
 cd $HOME
 if [ -d ./dotfiles/ ]; then
+    rm -rf dotfiles.old
     mv dotfiles dotfiles.old
 fi
-if [ -d .emacs.d/ ]; then
-    mv .emacs.d .emacs.d~
-fi
-git clone https://github.com/paulliwali/dotfiles.git
-ln -sf dotfiles/.screenrc .
+git clone ssh://git@github.com/paulliwali/dotfiles.git
 ln -sf dotfiles/.bash_profile .
 ln -sf dotfiles/.bashrc .
 ln -sf dotfiles/.bashrc_custom .
-ln -sf dotfiles/.emacs.d .
 ln -sf dotfiles/.vimrc .
 
 # Moving vim color schemes into the appropriate color folder
