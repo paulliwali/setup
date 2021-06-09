@@ -24,7 +24,7 @@ Added extra configuration for personal usage and setup on EC2 instance.
 
 Source: http://swaroopch.com/2010/12/06/bash-vim-setup/
 
-##MacOS
+## MacOS
 
 Install [Homebrew](http://brew.sh/) to install missing packages on OSX, effectively replacing ```apt-get```
 ```
